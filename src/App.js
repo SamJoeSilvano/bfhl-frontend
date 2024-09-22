@@ -11,7 +11,7 @@ function App() {
     e.preventDefault();
     try {
       const parsedData = JSON.parse(jsonData);
-      const res = await axios.post('http://127.0.0.1:5000/bfhl', parsedData);
+      const res = await axios.post('https://bajaj-flask-backend.onrender.com/bfhl', parsedData);
       setResponseData(res.data);
       setError('');
     } catch (err) {
